@@ -28,7 +28,6 @@ function getIssuesHtml(url, topicName, repoName) {
     // let folderPath = path.join("C:/Users/HP/Desktop/GitHubIssues", topicName);
     dirCreater(folderPath);
     let filePath = path.join(folderPath, repoName + ".pdf");
-    let text = JSON.stringify(iArr);
     let pdfDoc = new pdfKit();
     pdfDoc.pipe(fs.createWriteStream(filePath));
     pdfDoc.fillColor("blue");
