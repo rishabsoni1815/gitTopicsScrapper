@@ -22,6 +22,7 @@ function getTopicLinks(html) {
   for (let iterator = 0; iterator < linksElementArray.length; iterator++) {
     let linkHref = $(linksElementArray[iterator]).attr("href");
     let topicName = linkHref.split("/").pop();
+    console.log(topicName)
     let completelinkHref = `https://github.com${linkHref}`;
     getReposPageHtml(completelinkHref, topicName);
   }

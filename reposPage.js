@@ -16,9 +16,8 @@ function getReposPageHtml(url, topicName) {
   function getReposLinks(html) {
     let $ = cheerio.load(html);
     let linksElementArray = $(
-      ".f3.color-text-secondary.text-normal.lh-condensed"
+      ".f3.color-fg-muted.text-normal.lh-condensed"
     );
-    console.log(topicName);
     for (
       let iterator = 0;
       iterator < Math.min(10, linksElementArray.length);

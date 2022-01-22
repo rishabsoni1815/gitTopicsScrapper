@@ -25,7 +25,6 @@ function getIssuesHtml(url, topicName, repoName) {
       iArr.push(`https://github.com${linkToIssues}`);
     }
     let folderPath = path.join(__dirname, topicName);
-    // let folderPath = path.join("C:/Users/HP/Desktop/GitHubIssues", topicName);
     dirCreater(folderPath);
     let filePath = path.join(folderPath, repoName + ".pdf");
     // let text = JSON.stringify(iArr);
